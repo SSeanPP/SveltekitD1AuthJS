@@ -3,13 +3,13 @@ This is a template project built with Sveltekit, Cloudflare workers and a D1 dat
 
 
 # Necessary steps
-## environment variables
+## Environment variables
 For some reason when working with AuthJS and D1 databases only .dev.vars is respected and actually read. The documentation doesn't state this anywhere. Just fill in the format below into your file for this template to work.
 AUTH_GOOGLE_ID=
 AUTH_GOOGLE_SECRET=
 AUTH_SECRET=
 
-## Broken package
+## Fixing a broken package
 The @auth/core/lib/utils/env.js file has a bug with it in how AuthJS passes environmental variables to it. Essentially whatever the default method for doing that isn't working when used with D1 databases. 
 
 My solution is to change the package each time. I will implement a patch thing properly via node once this gets fleshed out more, and submit a push request / raise an issue on the github.
