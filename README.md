@@ -1,10 +1,11 @@
 # Sveltekit w/ D1 database and Auth
-This is a template project built with Sveltekit, Cloudflare workers and a D1 database with an Auth systems provided by AuthJS. The biggest problem with setting up any Auth for D1 databases is that the support with Sveltekit is poor and outdated. This is a working starter template with AuthJS ready to go. PLEASE read the guide below on how to get things functioning
+This is a template project built with Sveltekit, Cloudflare workers and a D1 database with Auth systems provided by AuthJS. The biggest problem with setting up any Auth for D1 databases is that the support with Sveltekit is poor and outdated. This is a working starter template with AuthJS ready to go. PLEASE read the guide below on how to get things functioning.
 
+By default I've set it up with Google OAuth, but you could change this to anything you like.
 
 # Necessary steps
 ## Environment variables
-For some reason when working with AuthJS and D1 databases only .dev.vars is respected and actually read. The documentation doesn't state this anywhere. Just fill in the format below into your file for this template to work.
+When working with AuthJS and D1 databases only .dev.vars is respected and actually read. The documentation doesn't state this anywhere. Just fill in the format below into your own .dev.vars file (create one) for this template to work.
 AUTH_GOOGLE_ID=
 AUTH_GOOGLE_SECRET=
 AUTH_SECRET=
